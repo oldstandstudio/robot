@@ -1,0 +1,38 @@
+:root {
+	--robot: greenyellow;
+	--eyes: darkslategray;
+	--mouth: darkslategray;
+}
+
+html {
+	margin: 0;
+}
+
+#robot {
+	background: var(--robot);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#robot #eyes {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+#robot #eyes .eye {
+	background: var(--eyes);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+#robot #mouth {
+	background: var(--mouth);
+	border-radius: 20px;
+	height: 100px;
+	margin: 5rem auto;
+	width: 300px;
+}
